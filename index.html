@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>موقع بيع الملفات</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>موقع بيع الملفات</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>الملفات المتاحة للبيع</h2>
+      <div class="product">
+        <h3>ملف 1</h3>
+        <p>وصف الملف هنا</p>
+        <button onclick="showPaymentInfo()">اشترِ الآن</button>
+      </div>
+      <!-- يمكن إضافة المزيد من المنتجات هنا -->
+    </section>
+
+    <div id="paymentForm" class="hidden">
+      <h3>معلومات الدفع عبر CCP</h3>
+      <form>
+        <label for="ccpNumber">رقم CCP:</label>
+        <input type="text" id="ccpNumber" required>
+        <label for="amount">المبلغ:</label>
+        <input type="number" id="amount" value="100" disabled>
+        <button type="submit">تأكيد الدفع</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 موقع بيع الملفات - جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
